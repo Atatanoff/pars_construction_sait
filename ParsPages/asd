@@ -1,0 +1,21 @@
+парсим https://astrakhan.santehnic-doma.ru/montazh-protivopozharnoj-sistemy-vodosnabzheniya.php 
+
+Traceback (most recent call last):
+  File "/home/father/pt/pars_construction_sait/main.py", line 38, in <module>
+    run()
+  File "/home/father/pt/pars_construction_sait/main.py", line 33, in run
+    write_sheet_list(name_file, list_work_chield_page, ch_url.split('.')[0].replace('-','_'), mode='a')
+  File "/home/father/pt/pars_construction_sait/main.py", line 20, in write_sheet_list
+    df.to_excel(writer, sheet_name=sheet)
+  File "/home/father/pt/pars_construction_sait/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/father/pt/pars_construction_sait/.venv/lib/python3.10/site-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/home/father/pt/pars_construction_sait/.venv/lib/python3.10/site-packages/pandas/core/generic.py", line 2374, in to_excel
+    formatter.write(
+  File "/home/father/pt/pars_construction_sait/.venv/lib/python3.10/site-packages/pandas/io/formats/excel.py", line 950, in write
+    writer._write_cells(
+  File "/home/father/pt/pars_construction_sait/.venv/lib/python3.10/site-packages/pandas/io/excel/_openpyxl.py", line 469, in _write_cells
+    raise ValueError(
+ValueError: Sheet 'montazh_protivopozharnoj_sistemy_vodosnabzheniya' already exists and if_sheet_exists is set to 'error'.
+(.venv) father
